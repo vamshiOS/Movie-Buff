@@ -50,6 +50,9 @@
 		F7A3F41A2C5F4E19004C55FC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F4192C5F4E19004C55FC /* TabBarController.swift */; };
 		F7A3F41C2C5F5CF1004C55FC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F41B2C5F5CF1004C55FC /* NetworkMonitor.swift */; };
 		F7A3F41E2C5F8F15004C55FC /* MovieDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F41D2C5F8F15004C55FC /* MovieDetailsScreen.swift */; };
+		F7A3F4202C5F9608004C55FC /* LocalMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */; };
+		F7A3F4212C5F963B004C55FC /* LocalMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */; };
+		F7A3F4222C5F963C004C55FC /* LocalMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,7 @@
 		F7A3F4192C5F4E19004C55FC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F7A3F41B2C5F5CF1004C55FC /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		F7A3F41D2C5F8F15004C55FC /* MovieDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsScreen.swift; sourceTree = "<group>"; };
+		F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,7 @@
 			children = (
 				F734A1082C5A11D000414FA2 /* Movie.swift */,
 				F734A10A2C5A16D000414FA2 /* MovieModel.swift */,
+				F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				F7A3F3EA2C5B71D5004C55FC /* MockWebservice.swift in Sources */,
 				F7A3F41C2C5F5CF1004C55FC /* NetworkMonitor.swift in Sources */,
 				F7A3F3FC2C5B8FA5004C55FC /* MovieCollectionViewCell.swift in Sources */,
+				F7A3F4202C5F9608004C55FC /* LocalMovie.swift in Sources */,
 				F7A3F3FA2C5B8F94004C55FC /* GenreHorizontalCollectionView.swift in Sources */,
 				F734A1112C5A541D00414FA2 /* MovieDetailView.swift in Sources */,
 				F734A0DD2C58CAB500414FA2 /* TabBarView.swift in Sources */,
@@ -460,6 +466,7 @@
 				F7A3F4132C5D4799004C55FC /* MockContainer.swift in Sources */,
 				F7A3F4092C5D27F0004C55FC /* Movie.swift in Sources */,
 				F7A3F4082C5D279C004C55FC /* Webservice.swift in Sources */,
+				F7A3F4222C5F963C004C55FC /* LocalMovie.swift in Sources */,
 				F7A3F40C2C5D2943004C55FC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +481,7 @@
 				F7A3F3E32C5B6CB2004C55FC /* MockWebservice.swift in Sources */,
 				F7A3F4182C5F4CB3004C55FC /* WatchListScreen.swift in Sources */,
 				F7A3F41E2C5F8F15004C55FC /* MovieDetailsScreen.swift in Sources */,
+				F7A3F4212C5F963B004C55FC /* LocalMovie.swift in Sources */,
 				F734A0F62C58CAB700414FA2 /* MyAppUITests.swift in Sources */,
 				F7A3F4162C5D5371004C55FC /* MoviesListScreen.swift in Sources */,
 				F7A3F40D2C5D2943004C55FC /* Constants.swift in Sources */,

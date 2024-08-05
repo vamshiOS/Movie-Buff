@@ -25,7 +25,6 @@ class Webservice: NetworkService{
         var request = URLRequest(url: APIEndpoint.endPointURL(for: .allMovies))
         request.httpMethod = "GET"
         request.setValue(Constants.Keys.rapidAPIValue, forHTTPHeaderField: Constants.rapidAPIHeader)
-        print("request headers: \(request.allHTTPHeaderFields)")
        let (data, response) = try await URLSession.shared.data(for: request)
         
         guard let httpUrlResponse = response as? HTTPURLResponse, httpUrlResponse.statusCode == 200 else{

@@ -18,7 +18,7 @@ final class MyAppUITests: XCTestCase {
         app.launch()
     }
     
-    func testUserSelectionOfMovieAndAddingItToWatchListAndNavigateBack(){
+    func testUserSelectionOfMovieAndAddingItToWatchlistAndRemovingAndSwitchingToWatchListTab(){
         
         var tabController = TabBarController(app: app)
         
