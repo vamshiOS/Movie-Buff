@@ -53,6 +53,7 @@
 		F7A3F4202C5F9608004C55FC /* LocalMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */; };
 		F7A3F4212C5F963B004C55FC /* LocalMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */; };
 		F7A3F4222C5F963C004C55FC /* LocalMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */; };
+		F7A3F4242C609B19004C55FC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A3F4232C609B19004C55FC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		F7A3F41B2C5F5CF1004C55FC /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		F7A3F41D2C5F8F15004C55FC /* MovieDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsScreen.swift; sourceTree = "<group>"; };
 		F7A3F41F2C5F9608004C55FC /* LocalMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMovie.swift; sourceTree = "<group>"; };
+		F7A3F4232C609B19004C55FC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		F734A0CE2C58CAB500414FA2 = {
 			isa = PBXGroup;
 			children = (
+				F7A3F4232C609B19004C55FC /* Launch Screen.storyboard */,
 				F734A0D92C58CAB500414FA2 /* MyApp */,
 				F734A0EA2C58CAB700414FA2 /* MyAppTests */,
 				F734A0F42C58CAB700414FA2 /* MyAppUITests */,
@@ -407,6 +410,7 @@
 			files = (
 				F7A3F3EC2C5B727C004C55FC /* movies.json in Resources */,
 				F734A0E22C58CAB700414FA2 /* Preview Assets.xcassets in Resources */,
+				F7A3F4242C609B19004C55FC /* Launch Screen.storyboard in Resources */,
 				F734A0DF2C58CAB700414FA2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
