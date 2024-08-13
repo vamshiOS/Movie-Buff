@@ -6,9 +6,15 @@
 //
 
 import Foundation
+import Combine
 
 
 class MockWebservice: NetworkService{
+    func loadMovies(for searchText: String) -> AnyPublisher<[SearchedMovie], any Error> {
+        return Just([]).setFailureType(to: Error.self).eraseToAnyPublisher()
+    }
+    
+    
     func getMovies() async throws -> [Movie] {
         return PreviewData.load(resourceName: "movies")
     }

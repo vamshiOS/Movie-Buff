@@ -11,7 +11,6 @@ import SwiftData
 
 struct MovieDetailView: View {
     
-   
     let movie: Movie
 
     var body: some View {

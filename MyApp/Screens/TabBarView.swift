@@ -20,12 +20,17 @@ struct TabBarView: View {
             }.tabItem { Label(Constants.moviesTitle, systemImage: Constants.Images.movies) }.tag(1).toolbarBackground(.secondary, for: .tabBar)
                 .toolbarBackground(.visible, for: .tabBar)
                 .toolbarColorScheme(.dark, for: .tabBar)
+            NavigationStack{
+                SearchView(viewModel: SearchViewModel(webService: Webservice()))
+            }.tabItem { Label(Constants.searchTitle, systemImage: Constants.Images.search) }.tag(2).toolbarBackground(.secondary, for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarColorScheme(.dark, for: .tabBar)
             
             NavigationStack{
                 WatchListView(tabSelection: $tabSelection)
                // WatchListView(movies: nil)
 
-            }.tabItem { Label(Constants.watchlistTitle, systemImage: Constants.Images.watchList) }.tag(2).toolbarBackground(.secondary, for: .tabBar)
+            }.tabItem { Label(Constants.watchlistTitle, systemImage: Constants.Images.watchList) }.tag(3).toolbarBackground(.secondary, for: .tabBar)
                 .toolbarBackground(.visible, for: .tabBar)
                 .toolbarColorScheme(.dark, for: .tabBar)
         }

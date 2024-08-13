@@ -47,6 +47,9 @@ struct MyAppApp: App {
             UINavigationBar.appearance().standardAppearance = navigationBarAppearance
             UINavigationBar.appearance().compactAppearance = navigationBarAppearance
             UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        UISearchBar.appearance().overrideUserInterfaceStyle = .dark
+
+
     }
     
     var body: some Scene {

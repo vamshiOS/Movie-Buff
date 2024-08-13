@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 enum NetworkError: Error{
     case badUrl
@@ -16,11 +17,11 @@ enum NetworkError: Error{
 
 protocol NetworkService{
     func getMovies() async throws -> [Movie]
+    func loadMovies(for searchText: String) -> AnyPublisher<[SearchedMovie], Error>
 }
 
 class Webservice: NetworkService{
     func getMovies() async throws -> [Movie]{
-        
         print("URL : \(APIEndpoint.endPointURL(for: .allMovies))")
         var request = URLRequest(url: APIEndpoint.endPointURL(for: .allMovies))
         request.httpMethod = "GET"
@@ -36,4 +37,21 @@ class Webservice: NetworkService{
         }
         return movies.movies
     }
+    
+    func loadMovies(for searchText: String) -> AnyPublisher<[SearchedMovie], Error>{
+        let url =  APIEndpoint.endPointURL(for: .searchMovies(searchText: searchText.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""))
+       return URLSession.shared.dataTaskPublisher(for: url)
+           .map(\.data)
+           .decode(type: MoviesResponse.self, decoder: JSONDecoder())
+           .map(\.Search)
+           .receive(on: DispatchQueue.main)
+           .catch { error -> AnyPublisher<[SearchedMovie], Error> in
+               return Just([]).setFailureType(to: Error.self).eraseToAnyPublisher()
+           }.eraseToAnyPublisher()
+   }
+    
+//    func getMovieDetails(for id: String) -> AnyPublisher<SearchedMovie, Error>{
+//    //https://www.omdbapi.com/?i=tt0468569&apiKey=b0e187ad
+//    }
+
 }
